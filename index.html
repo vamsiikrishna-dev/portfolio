@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en" class="dark-theme" data-theme="dark">
+
+<head>
+    <!-- Global Metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="generator" content="Astro v3.4.0">
+
+    <title>Vamsi Krishna | Software Developer</title>
+    <meta name="title" content="Vamsi Krishna | Software Developer">
+    <meta name="description"
+        content="Experienced web developer passionate about crafting efficient, accessible, and fast digital solutions.">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <style>
+        .accent {
+            color: var(--accent);
+            transition: all var(--transitionDuration) ease
+        }
+
+        body {
+            word-wrap: break-word;
+            font-family: Verdana, sans-serif;
+            line-height: 1.5;
+            margin: auto;
+            overflow-wrap: break-word;
+            text-align: left
+        }
+
+        b,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        strong {
+            color: inherit
+        }
+
+        a {
+            color: #3273dc
+        }
+
+        textarea {
+            width: 100%
+        }
+
+        input,
+        textarea {
+            font-size: 16px
+        }
+
+        content {
+            line-height: 1.6
+        }
+
+        table {
+            width: 100%
+        }
+
+        img {
+            height: auto;
+            max-width: 100%
+        }
+
+        code {
+            background-color: #f2f2f2;
+            padding: 2px 5px
+        }
+
+        pre {
+            padding: 1rem
+        }
+
+        pre>code {
+            all: unset
+        }
+
+        code {
+            all: unset
+        }
+
+        blockquote {
+            border: 1px solid #999;
+            color: #222;
+            font-style: italic;
+            margin: 0;
+            padding: 2px 0 2px 20px
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        :root {
+            --animationCurve: cubic-bezier(.22, 1, .36, 1);
+            --transitionDuration: .3s
+        }
+
+        @media (prefers-color-scheme: light) {
+            :root {
+                --darkLighter: #e0e0e0;
+                --lightDarker: #746463;
+                --accentRgb: 0, 50, 170;
+                --accent: rgb(var(--accentRgb));
+                --lightRgb: 24, 26, 27;
+                --light: rgb(var(--lightRgb));
+                --darkRgb: 242, 242, 242;
+                --dark: rgb(var(--darkRgb));
+                --shadowColor: rgba(0, 0, 0, .35);
+                --shadow: 0 0px 5px var(--shadowColor);
+                --shadowLifted: 0 0px 64px -10px var(--shadowColor)
+            }
+        }
+
+        :root[data-theme=light] {
+            --darkLighter: #e0e0e0;
+            --lightDarker: #746463;
+            --accentRgb: 0, 50, 170;
+            --accent: rgb(var(--accentRgb));
+            --lightRgb: 24, 26, 27;
+            --light: rgb(var(--lightRgb));
+            --darkRgb: 242, 242, 242;
+            --dark: rgb(var(--darkRgb));
+            --shadowColor: rgba(0, 0, 0, .35);
+            --shadow: 0 0px 5px var(--shadowColor);
+            --shadowLifted: 0 0px 64px -10px var(--shadowColor)
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --dark: #181a1b;
+                --darkLighter: #242424;
+                --light: #e8e6e3;
+                --lightDarker: #848484;
+                --accent: #67fd67;
+                --lightRgb: 232, 230, 227;
+                --accentRgb: 103, 253, 103;
+                --darkRgb: 24, 26, 27;
+                --shadowColor: rgba(0, 0, 0, .75);
+                --shadow: 0 0px 10px var(--shadowColor);
+                --shadowLifted: 0 0px 64px -10px var(--shadowColor)
+            }
+        }
+
+        :root[data-theme=dark] {
+            --dark: #181a1b;
+            --darkLighter: #242424;
+            --light: #e8e6e3;
+            --lightDarker: #848484;
+            --accent: #67fd67;
+            --lightRgb: 232, 230, 227;
+            --accentRgb: 103, 253, 103;
+            --darkRgb: 24, 26, 27;
+            --shadowColor: rgba(0, 0, 0, .75);
+            --shadow: 0 0px 10px var(--shadowColor);
+            --shadowLifted: 0 0px 64px -10px var(--shadowColor)
+        }
+
+        body {
+            background-color: var(--dark);
+            color: var(--light);
+            transition: all var(--transitionDuration) ease
+        }
+    </style>
+    <link rel="stylesheet" href="/src/index.css" />
+    <style>
+        svg[data-astro-cid-ayjk3irk] {
+            height: 1em;
+            width: 1em
+        }
+
+        svg[data-astro-cid-uyewcmty] {
+            height: 1em;
+            width: 1em
+        }
+
+        .theme-switcher[data-astro-cid-obcerpi7] {
+            background-color: var(--dark);
+            border: 2px solid var(--light);
+            border-radius: 2rem;
+            color: var(--light);
+            cursor: pointer;
+            display: flex;
+            font-size: 1.5rem;
+            gap: 1ch;
+            opacity: .7;
+            padding: .5rem;
+            transition: all var(--transitionDuration) ease;
+            z-index: 1
+        }
+
+        .theme-switcher[data-astro-cid-obcerpi7].fixed {
+            position: fixed;
+            right: 1rem;
+            top: 1rem
+        }
+
+        .theme-switcher[data-astro-cid-obcerpi7]:focus,
+        .theme-switcher[data-astro-cid-obcerpi7]:hover {
+            box-shadow: 0 0 5px 1px var(--accent)
+        }
+
+        .theme-switcher[data-astro-cid-obcerpi7]:focus,
+        .theme-switcher[data-astro-cid-obcerpi7]:hover {
+            border-color: var(--accent);
+            opacity: 1;
+            outline: none
+        }
+
+        .icon-wrapper[data-astro-cid-obcerpi7] {
+            display: flex;
+            transition: color var(--transitionDuration) ease
+        }
+
+        @keyframes shake {
+            0% {
+                transform: rotate(0) scale(1)
+            }
+
+            33% {
+                transform: rotate(-30deg) scale(1.15)
+            }
+
+            66% {
+                transform: rotate(30deg) scale(1.15)
+            }
+
+            to {
+                transform: rotate(0) scale(1)
+            }
+        }
+
+        .icon-wrapper[data-astro-cid-obcerpi7].active {
+            animation: shake .5s ease-out
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root:not([data-theme=light]) .icon-wrapper[data-astro-cid-obcerpi7]#dark-theme-icon {
+                color: var(--accent)
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            :root:not([data-theme=dark]) .icon-wrapper[data-astro-cid-obcerpi7]#light-theme-icon {
+                color: var(--accent)
+            }
+        }
+
+        :root[data-theme=light] .icon-wrapper[data-astro-cid-obcerpi7]#light-theme-icon {
+            color: var(--accent)
+        }
+
+        :root[data-theme=light] .icon-wrapper[data-astro-cid-obcerpi7]#dark-theme-icon {
+            color: var(--light)
+        }
+
+        :root[data-theme=dark] .icon-wrapper[data-astro-cid-obcerpi7]#light-theme-icon {
+            color: var(--light)
+        }
+
+        :root[data-theme=dark] .icon-wrapper[data-astro-cid-obcerpi7]#dark-theme-icon {
+            color: var(--accent)
+        }
+
+        @media screen and (max-width: 767px) {
+            .theme-switcher[data-astro-cid-obcerpi7] {
+                right: .5rem;
+                top: .5rem
+            }
+
+            :root[data-theme=dark] .icon-wrapper[data-astro-cid-obcerpi7]#light-theme-icon {
+                display: none
+            }
+
+            :root[data-theme=light] .icon-wrapper[data-astro-cid-obcerpi7]#dark-theme-icon {
+                display: none
+            }
+
+            @media (prefers-color-scheme: dark) {
+                :root:not([data-theme=light]) .icon-wrapper[data-astro-cid-obcerpi7]#light-theme-icon {
+                    display: none
+                }
+            }
+
+            @media (prefers-color-scheme: light) {
+                :root:not([data-theme=dark]) .icon-wrapper[data-astro-cid-obcerpi7]#dark-theme-icon {
+                    display: none
+                }
+            }
+        }
+
+        svg[data-astro-cid-3kbl2l44] {
+            height: 1em;
+            width: 1em
+        }
+    </style>
+    <!-- <script type="module" src="/src/hoisted.def39db7.js"></script> -->
+</head>
+
+<body>
+    <main>
+        <nav id="nav" class="nav hidden" data-astro-cid-ff2ghwth>
+            <div class="nav-content" data-astro-cid-ff2ghwth>
+                <a href="#hero" class="home-link scrolling-link" data-scroll-to="hero"
+                    data-track-click="navigation:home:link" data-astro-cid-ff2ghwth>
+                    <span class="avatar" data-astro-cid-ff2ghwth>
+                        <img src="/src/images/profile.jpg" style="border-radius: 25px;" />
+                    </span>
+                    <span class="author" data-astro-cid-ff2ghwth>Vamsi Krishna</span>
+                </a>
+                <ul class="links" data-astro-cid-ff2ghwth>
+                    <li class="link-wrapper" data-astro-cid-ff2ghwth>
+                        <a href="/#about" class="link scrolling-link" data-scroll-to="about"
+                            data-track-click="navigation:link" data-track-click-data="About"
+                            data-astro-cid-ff2ghwth>About</a>
+                    </li>
+                    <li class="link-wrapper" data-astro-cid-ff2ghwth>
+                        <a href="/#projects" class="link scrolling-link" data-scroll-to="projects"
+                            data-track-click="navigation:link" data-track-click-data="Projects"
+                            data-astro-cid-ff2ghwth>Projects</a>
+                    </li>
+                    <li class="link-wrapper" data-astro-cid-ff2ghwth>
+                        <a href="/#contact" class="link scrolling-link" data-scroll-to="contact"
+                            data-track-click="navigation:link" data-track-click-data="Contact"
+                            data-astro-cid-ff2ghwth>Contact</a>
+                    </li>
+                </ul>
+                <div data-track-click="navigation:theme-switcher" data-astro-cid-ff2ghwth>
+                    <button theme-vamsi="theme" type="button" id="theme-switcher" aria-label="theme-switcher"
+                        class="theme-switcher print-hidden " data-astro-cid-obcerpi7>
+                        <div id="dark-theme-icon" class="icon-wrapper" data-astro-cid-obcerpi7>
+                            <!--?xml version="1.0" encoding="utf-8"?-->
+                            <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                            <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" data-astro-cid-ayjk3irk>
+                                <path
+                                    d="M12 22C17.5228 22 22 17.5228 22 12C22 11.5373 21.3065 11.4608 21.0672 11.8568C19.9289 13.7406 17.8615 15 15.5 15C11.9101 15 9 12.0899 9 8.5C9 6.13845 10.2594 4.07105 12.1432 2.93276C12.5392 2.69347 12.4627 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                    fill="currentColor" data-astro-cid-ayjk3irk></path>
+                            </svg>
+                        </div>
+                        <div id="light-theme-icon" class="icon-wrapper" data-astro-cid-obcerpi7>
+                            <!--?xml version="1.0" encoding="utf-8"?-->
+                            <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                            <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" data-astro-cid-uyewcmty>
+                                <path
+                                    d="M17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12Z"
+                                    fill="currentColor" data-astro-cid-uyewcmty></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12 1.25C12.4142 1.25 12.75 1.58579 12.75 2V4C12.75 4.41421 12.4142 4.75 12 4.75C11.5858 4.75 11.25 4.41421 11.25 4V2C11.25 1.58579 11.5858 1.25 12 1.25ZM3.66865 3.71609C3.94815 3.41039 4.42255 3.38915 4.72825 3.66865L6.95026 5.70024C7.25596 5.97974 7.2772 6.45413 6.9977 6.75983C6.7182 7.06553 6.2438 7.08677 5.9381 6.80727L3.71609 4.77569C3.41039 4.49619 3.38915 4.02179 3.66865 3.71609ZM20.3314 3.71609C20.6109 4.02179 20.5896 4.49619 20.2839 4.77569L18.0619 6.80727C17.7562 7.08677 17.2818 7.06553 17.0023 6.75983C16.7228 6.45413 16.744 5.97974 17.0497 5.70024L19.2718 3.66865C19.5775 3.38915 20.0518 3.41039 20.3314 3.71609ZM1.25 12C1.25 11.5858 1.58579 11.25 2 11.25H4C4.41421 11.25 4.75 11.5858 4.75 12C4.75 12.4142 4.41421 12.75 4 12.75H2C1.58579 12.75 1.25 12.4142 1.25 12ZM19.25 12C19.25 11.5858 19.5858 11.25 20 11.25H22C22.4142 11.25 22.75 11.5858 22.75 12C22.75 12.4142 22.4142 12.75 22 12.75H20C19.5858 12.75 19.25 12.4142 19.25 12ZM17.0255 17.0252C17.3184 16.7323 17.7933 16.7323 18.0862 17.0252L20.3082 19.2475C20.6011 19.5404 20.601 20.0153 20.3081 20.3082C20.0152 20.6011 19.5403 20.601 19.2475 20.3081L17.0255 18.0858C16.7326 17.7929 16.7326 17.3181 17.0255 17.0252ZM6.97467 17.0253C7.26756 17.3182 7.26756 17.7931 6.97467 18.086L4.75244 20.3082C4.45955 20.6011 3.98468 20.6011 3.69178 20.3082C3.39889 20.0153 3.39889 19.5404 3.69178 19.2476L5.91401 17.0253C6.2069 16.7324 6.68177 16.7324 6.97467 17.0253ZM12 19.25C12.4142 19.25 12.75 19.5858 12.75 20V22C12.75 22.4142 12.4142 22.75 12 22.75C11.5858 22.75 11.25 22.4142 11.25 22V20C11.25 19.5858 11.5858 19.25 12 19.25Z"
+                                    fill="currentColor" data-astro-cid-uyewcmty></path>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+                <!-- <ThemeCustomization /> -->
+            </div>
+        </nav>
+        <div class="app" data-astro-cid-j7pv25f6>
+            <div id="hero" onscroll="showHideNav()" class="hero" data-astro-cid-mijw3iom>
+                <div class="hero-image" data-astro-cid-mijw3iom>
+                    <img src="/src/images/lines.webp" style="background-size:cover" />
+                </div>
+                <h1 class="title" data-astro-cid-mijw3iom>Hey, I'm Vamsi Krishna</h1>
+                <div class="subtitle" data-astro-cid-mijw3iom>
+                    Experienced software developer who <span class="highlight" data-astro-cid-mijw3iom>enjoys</span>
+                    building <span class="highlight" data-astro-cid-mijw3iom>fast</span>
+                    and <span class="highlight" data-astro-cid-mijw3iom>accessible</span>
+                    digital products.
+
+                </div>
+                <div data-astro-cid-mijw3iom>
+                    <button id="cta-button" data-track-click="home:hero:cta-button" data-astro-cid-mijw3iom
+                        class="large" data-astro-cid-7mc3ftep><a href="#about">
+                            About me
+                        </a>
+                    </button>
+                </div>
+            </div>
+            <section id="about" data-astro-cid-egk6fmth class="astro-bnhkd74z" data-astro-cid-bnhkd74z>
+                <div class="content" data-astro-cid-bnhkd74z>
+                    <h2 class="title" data-astro-cid-bnhkd74z>About me</h2>
+                    <div class="wrapper" data-astro-cid-egk6fmth>
+                        <div class="subtitle" data-astro-cid-egk6fmth>
+                            <div data-astro-cid-egk6fmth>
+                                Developing software for <span class="highlight" data-astro-cid-egk6fmth>19</span>
+                                years; spent <span class="highlight" data-astro-cid-egk6fmth>11</span>
+                                of them in web development.
+
+                            </div>
+                            <div data-astro-cid-egk6fmth></div>
+                        </div>
+                        <div class="content-wrapper" data-astro-cid-egk6fmth>
+                            <div class="description" data-astro-cid-egk6fmth>
+                                <div class="title2" data-astro-cid-egk6fmth>Get to know me!</div>
+                                <div data-astro-cid-egk6fmth>
+                                    <p data-astro-cid-egk6fmth>I'm a software developer proficient in JavaScript and the
+                                        web. I'm
+                                        passionate about web performance, accessibility, mentoring, user &
+                                        developer experience.
+                                    </p>
+                                    <p data-astro-cid-egk6fmth>I follow a digital minimalism mindset, using technology
+                                        to improve
+                                        people's lives and provide value for businesses.
+                                    </p>
+                                    <p data-astro-cid-egk6fmth>In my free time, I build side projects and like exploring
+                                        new
+                                        technologies. You can see some of my work in the projects section
+                                        below.
+                                    </p>
+                                    <p data-astro-cid-egk6fmth>I'm open to collaboration opportunities where I can
+                                        contribute,
+                                        learn and grow. Don't hesitate to reach out if you think my skills
+                                        and experience are a good fit for your next project.
+                                    </p>
+                                </div>
+                                <div data-astro-cid-egk6fmth>
+                                    <button id="about-projects-button" data-track-click="about:projects-button"
+                                        data-astro-cid-egk6fmth class="small" data-astro-cid-7mc3ftep>
+                                        <a href="#projects">Projects</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="skills" data-astro-cid-egk6fmth>
+                                <div class="title2" data-astro-cid-egk6fmth>My toolkit</div>
+                                <div class="skills-list" data-astro-cid-egk6fmth>
+                                    <span class="skill-block" data-astro-cid-egk6fmth>JavaScript</span>
+                                    <span class="skill-block" data-astro-cid-egk6fmth>Node.js</span>
+                                    <span class="skill-block" data-astro-cid-egk6fmth>TypeScript</span>
+                                    <span class="skill-block" data-astro-cid-egk6fmth>CSS</span>
+                                    <span class="skill-block" data-astro-cid-egk6fmth>SASS</span>
+                                    <span class="skill-block" data-astro-cid-egk6fmth>GraphQL</span>
+                                    <span class="skill-block" data-astro-cid-egk6fmth>SQL</span>
+                                    <span class="skill-block" data-astro-cid-egk6fmth>React</span>
+                                    <span class="skill-block" data-astro-cid-egk6fmth>React Native</span>
+                                    <span class="skill-block" data-astro-cid-egk6fmth>Redux</span>
+                                    <span class="skill-block" data-astro-cid-egk6fmth>Next.js</span>
+                                    <span class="skill-block" data-astro-cid-egk6fmth>Angular</span>
+                                    <span class="skill-block" data-astro-cid-egk6fmth>Phaser</span>
+                                    <span class="skill-block" data-astro-cid-egk6fmth>GSAP</span>
+                                    <span class="skill-block" data-astro-cid-egk6fmth>Express</span>
+                                    <span class="skill-block" data-astro-cid-egk6fmth>Vite</span>
+                                    <span class="skill-block" data-astro-cid-egk6fmth>webpack</span>
+                                    <span class="skill-block" data-astro-cid-egk6fmth>Astro</span>
+                                    <span class="skill-block" data-astro-cid-egk6fmth>Jest</span>
+                                    <span class="skill-block" data-astro-cid-egk6fmth>Cypress</span>
+                                    <span class="skill-block" data-astro-cid-egk6fmth>CLI</span>
+                                    <span class="skill-block" data-astro-cid-egk6fmth>Git</span>
+                                    <span class="skill-block" data-astro-cid-egk6fmth>SEO</span>
+                                    <span class="skill-block" data-astro-cid-egk6fmth>a11y</span>
+                                    <span class="skill-block" data-astro-cid-egk6fmth>Vercel</span>
+                                </div>
+                                <!-- <div>
+          <a href="/resume" data-track-click="about:resume-button" tabindex="-1"
+            ><Button>Resume</Button></a
+          >
+        </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="projects" data-astro-cid-gaklu5j4 class="astro-bnhkd74z" data-astro-cid-bnhkd74z>
+                <div class="content" data-astro-cid-bnhkd74z>
+                    <h2 class="title" data-astro-cid-bnhkd74z>Projects</h2>
+                    <div class="wrapper" data-astro-cid-gaklu5j4>
+                        <div class="project" data-astro-cid-sv5liydy>
+                            <div class="image-wrapper" data-astro-cid-sv5liydy>
+                                <img src="/src/images/parapantest.webp" alt="Parapantest" width="935px" height="530px"
+                                    data-astro-cid-sv5liydy>
+                                <div class="description" data-astro-cid-sv5liydy>
+                                    <div class="description-title" data-astro-cid-sv5liydy>Description & Goals</div>
+                                    <p class="description-line" data-astro-cid-sv5liydy>Started as a hobby project to
+                                        help a friend learn for his paragliding exam, I ended up building a full-fledged
+                                        quiz application.</p>
+                                    <p class="description-line" data-astro-cid-sv5liydy>It consists of 1000+ questions
+                                        from 8 different categories and has a simulation mode that mimics the real exam.
+                                    </p>
+                                    <p class="description-line" data-astro-cid-sv5liydy>From a technical point of view,
+                                        my goals were to learn using more complex animations with GSAP and deliver a
+                                        fast &amp;secure web application. It runs server-less on Vercel and uses Next.js
+                                        API routes to hide all sensitive data from the client, such as the correct
+                                        answers.</p>
+                                </div>
+                            </div>
+                            <div class="card-data" data-astro-cid-sv5liydy>
+                                <h3 class="title" data-astro-cid-sv5liydy>Parapantest</h3>
+                                <div class="short-description" data-astro-cid-sv5liydy>Quizzes and exam simulation for
+                                    paragliding pilots.</div>
+                                <div class="tag-list" data-astro-cid-sv5liydy>
+                                    <span class="tag-block" data-astro-cid-sv5liydy>Next.js</span>
+                                    <span class="tag-block" data-astro-cid-sv5liydy>React</span>
+                                    <span class="tag-block" data-astro-cid-sv5liydy>GSAP</span>
+                                    <span class="tag-block" data-astro-cid-sv5liydy>CSV processing</span>
+                                    <span class="tag-block" data-astro-cid-sv5liydy>Vercel API</span>
+                                    <span class="tag-block" data-astro-cid-sv5liydy>CSS Modules</span>
+                                </div>
+                                <div class="button-wrapper" data-astro-cid-sv5liydy>
+                                    <a href="https://parapantest.vercel.app" target="_blank" rel="noopener"
+                                        tabindex="-1" data-track-click="project:check-it-button"
+                                        data-track-click-data="Parapantest" data-astro-cid-sv5liydy>
+                                        <button data-astro-cid-sv5liydy class="small" data-astro-cid-7mc3ftep>
+                                            <span class="link-content" data-astro-cid-sv5liydy>
+                                                Check it
+
+                                                <!--?xml version="1.0" encoding="UTF-8" standalone="no"?-->
+                                                <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                                <svg fill="currentColor" viewBox="0 0 24 24"
+                                                    xmlns="http://www.w3.org/2000/svg" data-astro-cid-nwk3hc3g>
+                                                    <path fill-rule="evenodd"
+                                                        d="M5,2 L7,2 C7.55228475,2 8,2.44771525 8,3 C8,3.51283584 7.61395981,3.93550716 7.11662113,3.99327227 L7,4 L5,4 C4.48716416,4 4.06449284,4.38604019 4.00672773,4.88337887 L4,5 L4,19 C4,19.5128358 4.38604019,19.9355072 4.88337887,19.9932723 L5,20 L19,20 C19.5128358,20 19.9355072,19.6139598 19.9932723,19.1166211 L20,19 L20,17 C20,16.4477153 20.4477153,16 21,16 C21.5128358,16 21.9355072,16.3860402 21.9932723,16.8833789 L22,17 L22,19 C22,20.5976809 20.75108,21.9036609 19.1762728,21.9949073 L19,22 L5,22 C3.40231912,22 2.09633912,20.75108 2.00509269,19.1762728 L2,19 L2,5 C2,3.40231912 3.24891996,2.09633912 4.82372721,2.00509269 L5,2 L7,2 L5,2 Z M21,2 L21.081,2.003 L21.2007258,2.02024007 L21.2007258,2.02024007 L21.3121425,2.04973809 L21.3121425,2.04973809 L21.4232215,2.09367336 L21.5207088,2.14599545 L21.5207088,2.14599545 L21.6167501,2.21278596 L21.7071068,2.29289322 L21.7071068,2.29289322 L21.8036654,2.40469339 L21.8036654,2.40469339 L21.8753288,2.5159379 L21.9063462,2.57690085 L21.9063462,2.57690085 L21.9401141,2.65834962 L21.9401141,2.65834962 L21.9641549,2.73400703 L21.9641549,2.73400703 L21.9930928,2.8819045 L21.9930928,2.8819045 L22,3 L22,3 L22,9 C22,9.55228475 21.5522847,10 21,10 C20.4477153,10 20,9.55228475 20,9 L20,5.414 L13.7071068,11.7071068 C13.3466228,12.0675907 12.7793918,12.0953203 12.3871006,11.7902954 L12.2928932,11.7071068 C11.9324093,11.3466228 11.9046797,10.7793918 12.2097046,10.3871006 L12.2928932,10.2928932 L18.584,4 L15,4 C14.4477153,4 14,3.55228475 14,3 C14,2.44771525 14.4477153,2 15,2 L21,2 Z"
+                                                        data-astro-cid-nwk3hc3g></path>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project" data-astro-cid-sv5liydy>
+                            <div class="image-wrapper" data-astro-cid-sv5liydy>
+                                <img src="/src/images/paddle-pong.webp" alt="Paddle Pong" width="935px" height="530px"
+                                    data-astro-cid-sv5liydy>
+                                <div class="description" data-astro-cid-sv5liydy>
+                                    <div class="description-title" data-astro-cid-sv5liydy>Description & Goals</div>
+                                    <p class="description-line" data-astro-cid-sv5liydy>This game was created as a
+                                        learning exercise, to familiarize myself with the WebRTC technology.</p>
+                                    <p class="description-line" data-astro-cid-sv5liydy>It is a multiplayer game, where
+                                        two players compete against each other in a classic Pong game, but with a twist:
+                                        the paddles are controlled by the players &#39;phones.</p>
+                                    <p class="description-line" data-astro-cid-sv5liydy>The game was built using Phaser,
+                                        a popular game engine for JavaScript, and uses WebRTC for the multiplayer
+                                        functionality.</p>
+                                </div>
+                            </div>
+                            <div class="card-data" data-astro-cid-sv5liydy>
+                                <h3 class="title" data-astro-cid-sv5liydy>Paddle Pong</h3>
+                                <div class="short-description" data-astro-cid-sv5liydy>A multiplayer reinterpretation of
+                                    the classic Pong game, with a twist.</div>
+                                <div class="tag-list" data-astro-cid-sv5liydy>
+                                    <span class="tag-block" data-astro-cid-sv5liydy>WebRTC</span>
+                                    <span class="tag-block" data-astro-cid-sv5liydy>Phaser</span>
+                                    <span class="tag-block" data-astro-cid-sv5liydy>Astro</span>
+                                    <span class="tag-block" data-astro-cid-sv5liydy>TypeScript</span>
+                                </div>
+                                <div class="button-wrapper" data-astro-cid-sv5liydy>
+                                    <a href="https://pocket-console.vercel.app" target="_blank" rel="noopener"
+                                        tabindex="-1" data-track-click="project:check-it-button"
+                                        data-track-click-data="Paddle Pong" data-astro-cid-sv5liydy>
+                                        <button data-astro-cid-sv5liydy class="small" data-astro-cid-7mc3ftep>
+                                            <span class="link-content" data-astro-cid-sv5liydy>
+                                                Check it
+
+                                                <!--?xml version="1.0" encoding="UTF-8" standalone="no"?-->
+                                                <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                                <svg fill="currentColor" viewBox="0 0 24 24"
+                                                    xmlns="http://www.w3.org/2000/svg" data-astro-cid-nwk3hc3g>
+                                                    <path fill-rule="evenodd"
+                                                        d="M5,2 L7,2 C7.55228475,2 8,2.44771525 8,3 C8,3.51283584 7.61395981,3.93550716 7.11662113,3.99327227 L7,4 L5,4 C4.48716416,4 4.06449284,4.38604019 4.00672773,4.88337887 L4,5 L4,19 C4,19.5128358 4.38604019,19.9355072 4.88337887,19.9932723 L5,20 L19,20 C19.5128358,20 19.9355072,19.6139598 19.9932723,19.1166211 L20,19 L20,17 C20,16.4477153 20.4477153,16 21,16 C21.5128358,16 21.9355072,16.3860402 21.9932723,16.8833789 L22,17 L22,19 C22,20.5976809 20.75108,21.9036609 19.1762728,21.9949073 L19,22 L5,22 C3.40231912,22 2.09633912,20.75108 2.00509269,19.1762728 L2,19 L2,5 C2,3.40231912 3.24891996,2.09633912 4.82372721,2.00509269 L5,2 L7,2 L5,2 Z M21,2 L21.081,2.003 L21.2007258,2.02024007 L21.2007258,2.02024007 L21.3121425,2.04973809 L21.3121425,2.04973809 L21.4232215,2.09367336 L21.5207088,2.14599545 L21.5207088,2.14599545 L21.6167501,2.21278596 L21.7071068,2.29289322 L21.7071068,2.29289322 L21.8036654,2.40469339 L21.8036654,2.40469339 L21.8753288,2.5159379 L21.9063462,2.57690085 L21.9063462,2.57690085 L21.9401141,2.65834962 L21.9401141,2.65834962 L21.9641549,2.73400703 L21.9641549,2.73400703 L21.9930928,2.8819045 L21.9930928,2.8819045 L22,3 L22,3 L22,9 C22,9.55228475 21.5522847,10 21,10 C20.4477153,10 20,9.55228475 20,9 L20,5.414 L13.7071068,11.7071068 C13.3466228,12.0675907 12.7793918,12.0953203 12.3871006,11.7902954 L12.2928932,11.7071068 C11.9324093,11.3466228 11.9046797,10.7793918 12.2097046,10.3871006 L12.2928932,10.2928932 L18.584,4 L15,4 C14.4477153,4 14,3.55228475 14,3 C14,2.44771525 14.4477153,2 15,2 L21,2 Z"
+                                                        data-astro-cid-nwk3hc3g></path>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project" data-astro-cid-sv5liydy>
+                            <div class="image-wrapper" data-astro-cid-sv5liydy>
+                                <img src="/src/images/lines.webp" alt="Snake" width="935px" height="530px"
+                                    data-astro-cid-sv5liydy>
+                                <div class="description" data-astro-cid-sv5liydy>
+                                    <div class="description-title" data-astro-cid-sv5liydy>Description & Goals</div>
+                                    <p class="description-line" data-astro-cid-sv5liydy>Created mainly as a learning
+                                        exercise, this game was built from scratch, without using any game engine or
+                                        library.</p>
+                                    <p class="description-line" data-astro-cid-sv5liydy>My goal was to familiarize
+                                        myself with running a high amount of animations in the browser at 60 FPS, thus
+                                        implementing it using as low-level tools as possible.</p>
+                                    <p class="description-line" data-astro-cid-sv5liydy>I used the HTML Canvas as the
+                                        rendering engine and implemented a custom game loop, collision detection, and
+                                        animation system.</p>
+                                    <p class="description-line" data-astro-cid-sv5liydy>One of the most exciting bits
+                                        was implementing the bézier curve algorithm, which I used for all the animations
+                                        in the game.</p>
+                                </div>
+                            </div>
+                            <div class="card-data" data-astro-cid-sv5liydy>
+                                <h3 class="title" data-astro-cid-sv5liydy>Snake</h3>
+                                <div class="short-description" data-astro-cid-sv5liydy>A reinterpretation of the classic
+                                    Snake game.</div>
+                                <div class="tag-list" data-astro-cid-sv5liydy>
+                                    <span class="tag-block" data-astro-cid-sv5liydy>No libraries</span>
+                                    <span class="tag-block" data-astro-cid-sv5liydy>HTML Canvas</span>
+                                    <span class="tag-block" data-astro-cid-sv5liydy>Custom Game Engine</span>
+                                    <span class="tag-block" data-astro-cid-sv5liydy>Astro</span>
+                                    <span class="tag-block" data-astro-cid-sv5liydy>TypeScript</span>
+                                </div>
+                                <div class="button-wrapper" data-astro-cid-sv5liydy>
+                                    <a href="/games/play-snake" target="_blank" rel="noopener" tabindex="-1"
+                                        data-track-click="project:check-it-button" data-track-click-data="Snake"
+                                        data-astro-cid-sv5liydy>
+                                        <button data-astro-cid-sv5liydy class="small" data-astro-cid-7mc3ftep>
+                                            <span class="link-content" data-astro-cid-sv5liydy>
+                                                Check it
+
+                                                <!--?xml version="1.0" encoding="UTF-8" standalone="no"?-->
+                                                <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                                <svg fill="currentColor" viewBox="0 0 24 24"
+                                                    xmlns="http://www.w3.org/2000/svg" data-astro-cid-nwk3hc3g>
+                                                    <path fill-rule="evenodd"
+                                                        d="M5,2 L7,2 C7.55228475,2 8,2.44771525 8,3 C8,3.51283584 7.61395981,3.93550716 7.11662113,3.99327227 L7,4 L5,4 C4.48716416,4 4.06449284,4.38604019 4.00672773,4.88337887 L4,5 L4,19 C4,19.5128358 4.38604019,19.9355072 4.88337887,19.9932723 L5,20 L19,20 C19.5128358,20 19.9355072,19.6139598 19.9932723,19.1166211 L20,19 L20,17 C20,16.4477153 20.4477153,16 21,16 C21.5128358,16 21.9355072,16.3860402 21.9932723,16.8833789 L22,17 L22,19 C22,20.5976809 20.75108,21.9036609 19.1762728,21.9949073 L19,22 L5,22 C3.40231912,22 2.09633912,20.75108 2.00509269,19.1762728 L2,19 L2,5 C2,3.40231912 3.24891996,2.09633912 4.82372721,2.00509269 L5,2 L7,2 L5,2 Z M21,2 L21.081,2.003 L21.2007258,2.02024007 L21.2007258,2.02024007 L21.3121425,2.04973809 L21.3121425,2.04973809 L21.4232215,2.09367336 L21.5207088,2.14599545 L21.5207088,2.14599545 L21.6167501,2.21278596 L21.7071068,2.29289322 L21.7071068,2.29289322 L21.8036654,2.40469339 L21.8036654,2.40469339 L21.8753288,2.5159379 L21.9063462,2.57690085 L21.9063462,2.57690085 L21.9401141,2.65834962 L21.9401141,2.65834962 L21.9641549,2.73400703 L21.9641549,2.73400703 L21.9930928,2.8819045 L21.9930928,2.8819045 L22,3 L22,3 L22,9 C22,9.55228475 21.5522847,10 21,10 C20.4477153,10 20,9.55228475 20,9 L20,5.414 L13.7071068,11.7071068 C13.3466228,12.0675907 12.7793918,12.0953203 12.3871006,11.7902954 L12.2928932,11.7071068 C11.9324093,11.3466228 11.9046797,10.7793918 12.2097046,10.3871006 L12.2928932,10.2928932 L18.584,4 L15,4 C14.4477153,4 14,3.55228475 14,3 C14,2.44771525 14.4477153,2 15,2 L21,2 Z"
+                                                        data-astro-cid-nwk3hc3g></path>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" data-astro-cid-5mnli7gs class="astro-bnhkd74z" data-astro-cid-bnhkd74z>
+                <div class="content" data-astro-cid-bnhkd74z>
+                    <h2 class="title" data-astro-cid-bnhkd74z>Contact me</h2>
+                    <form id="contact-form" name="contact-form" data-astro-cid-5mnli7gs>
+                        <label data-astro-cid-5mnli7gs>
+                            Title
+                            <input name="subject" placeholder="What you're writing about?" maxlength="60"
+                                data-astro-cid-5mnli7gs>
+                        </label>
+                        <label data-astro-cid-5mnli7gs>
+                            Message
+                            <textarea name="body" placeholder="Full message comes here..." rows="10"
+                                data-astro-cid-5mnli7gs></textarea>
+                        </label>
+                        <button type="submit" data-track-click="contact:submit-button" data-astro-cid-5mnli7gs
+                            class="large" data-astro-cid-7mc3ftep>Submit
+                        </button>
+                    </form>
+                </div>
+            </section>
+            <footer class="wrapper" data-astro-cid-hiiiy2g5>
+                <div class="desc" data-astro-cid-hiiiy2g5>
+                    <div class="subtitle" data-astro-cid-hiiiy2g5>Vamsi Krishna</div>
+                    <div data-astro-cid-hiiiy2g5>
+                        Experienced software developer who <span class="highlight" data-astro-cid-hiiiy2g5>enjoys</span>
+                        building <span class="highlight" data-astro-cid-hiiiy2g5>fast</span>
+                        and <span class="highlight" data-astro-cid-hiiiy2g5>accessible</span>
+                        digital products.
+
+                    </div>
+                </div>
+                <div class="inspiration" data-astro-cid-hiiiy2g5>
+                    <div class="subtitle" data-astro-cid-hiiiy2g5>Design</div>
+                    <div data-astro-cid-hiiiy2g5>
+                        Inspired by <a href="https://www.rammaheshwari.com/" target="_blank" rel="noopener"
+                            data-astro-cid-hiiiy2g5>Ram Maheshwari</a>
+                        's website.
+
+                    </div>
+                </div>
+                <div class="social" data-astro-cid-hiiiy2g5>
+                    <div class="subtitle" data-astro-cid-hiiiy2g5>Social</div>
+                    <div class="links" data-astro-cid-hiiiy2g5>
+                        <a class="social-link" href="https://github.com/vamsi-krishna-mishran" target="_blank"
+                            rel="noopener" aria-label="Github profile" data-track-click="footer:social-link"
+                            data-track-click-data="Github" data-astro-cid-hiiiy2g5>
+                            <!--?xml version="1.0" encoding="UTF-8" standalone="no"?-->
+                            <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                            <svg width="800px" height="800px" viewBox="0 0 20 20" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                data-astro-cid-3kbl2l44>
+                                <title>github [#142]</title>
+                                <desc data-astro-cid-3kbl2l44>Created with Sketch.</desc>
+                                <defs data-astro-cid-3kbl2l44></defs>
+                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                                    data-astro-cid-3kbl2l44>
+                                    <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)"
+                                        fill="currentColor" data-astro-cid-3kbl2l44>
+                                        <g id="icons" transform="translate(56.000000, 160.000000)"
+                                            data-astro-cid-3kbl2l44>
+                                            <path
+                                                d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399"
+                                                id="github-[#142]" data-astro-cid-3kbl2l44></path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                        <a class="social-link" href="https://www.linkedin.com/in/vamsi-krishna-b7543922b/"
+                            target="_blank" rel="noopener" aria-label="LinkedIn profile"
+                            data-track-click="footer:social-link" data-track-click-data="LinkedIn"
+                            data-astro-cid-hiiiy2g5>
+                            <!--?xml version="1.0" encoding="UTF-8" standalone="no"?-->
+                            <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                data-astro-cid-6e7mea7p>
+                                <path fill="currentColor"
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                                    data-astro-cid-6e7mea7p></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </main>
+    <script defer src="https://www.googletagmanager.com/gtag/js?id=G-69R5YGS2NS"></script>
+    <script>
+        (function ()
+        {
+            const id = "G-69R5YGS2NS";
+
+            window.dataLayer = window.dataLayer || [];
+            window.gtag = function ()
+            {
+                window.dataLayer.push(arguments);
+            }
+                ;
+
+            window.initGaTracking = () =>
+            {
+                let userId = localStorage.getItem("user-id");
+                if (!userId)
+                {
+                    userId = crypto.randomUUID();
+                    localStorage.setItem("user-id", userId);
+                }
+                gtag("js", new Date());
+                gtag("config", id, {
+                    user_id: userId
+                });
+            }
+                ;
+
+            window.initGaTracking();
+        }
+        )();
+    </script>
+    <script src="/src/script.js"></script>
+</body>
+
+</html>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Space+Mono:wght@400;700&display=block"
+    rel="stylesheet">

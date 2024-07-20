@@ -227,6 +227,10 @@ svg[data-astro-cid-nwk3hc3g] {
     width: 1em
 }
 
+#hero {
+    overflow: hidden;
+}
+
 .project[data-astro-cid-sv5liydy] {
     --orientation: flex-start;
     background-color: var(--dark);

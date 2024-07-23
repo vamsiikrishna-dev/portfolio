@@ -231,6 +231,10 @@ svg[data-astro-cid-nwk3hc3g] {
     overflow: hidden;
 }
 
+.message-hidden {
+    visibility: hidden;
+}
+
 .project[data-astro-cid-sv5liydy] {
     --orientation: flex-start;
     background-color: var(--dark);
@@ -735,14 +739,44 @@ svg[data-astro-cid-6e7mea7p] {
     transition: all var(--transitionDuration) ease
 }
 
+
+
 .social-link[data-astro-cid-hiiiy2g5]:focus-visible,
 .social-link[data-astro-cid-hiiiy2g5]:hover {
     color: var(--accent)
 }
 
+.social-icon {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 0.3rem;
+    border-radius: 5px;
+    ;
+}
+
+.social-icon:focus-visible,
+.social-icon:hover {
+    background-color: var(--accent)
+}
+
+.op-set {
+    opacity: 0.8;
+}
+
+.description-custom {
+    /* overflow-y: scroll; */
+    padding-top: 3rem !important;
+}
+
+
+
 @media screen and (max-width:767px) {
     .wrapper[data-astro-cid-hiiiy2g5] {
         flex-wrap: wrap
+    }
+
+    video {
+        width: 100%;
+        height: auto;
     }
 }
 

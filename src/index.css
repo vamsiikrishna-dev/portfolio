@@ -767,6 +767,11 @@ svg[data-astro-cid-6e7mea7p] {
     padding-top: 3rem !important;
 }
 
+.zero-height {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
 
 
 @media screen and (max-width:767px) {

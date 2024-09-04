@@ -775,10 +775,12 @@ svg[data-astro-cid-6e7mea7p] {
 .badge {
     background-color: blue;
     font-weight: bold;
-    padding: 0.5rem;
+    padding: 0rem 0.2rem;
     margin: 0rem 0.2rem;
     border-radius: 20%;
-    border: 5px solid blue;
+    border: 5px solid rgb(0, 17, 255);
+    display: inline-block;
+    ;
 }
 
 

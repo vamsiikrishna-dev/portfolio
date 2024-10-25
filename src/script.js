@@ -118,6 +118,7 @@ async function sendData(data)
 {
     try
     {
+        const BACKEND_URL="https://smtpserver-xi.vercel.app/"
         const api = await fetch(BACKEND_URL + "details", {
             method: "POST",
             headers: {

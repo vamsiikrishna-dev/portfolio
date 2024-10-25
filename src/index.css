@@ -783,7 +783,20 @@ svg[data-astro-cid-6e7mea7p] {
     ;
 }
 
+/* a {
+    color: red;
+} */
 
+
+html[data-theme="dark"] a {
+    color: white;
+    font-weight: bold;
+}
+
+html[data-theme="light"] a {
+    color: black;
+    font-weight: bold;
+}
 
 @media screen and (max-width:767px) {
     .wrapper[data-astro-cid-hiiiy2g5] {

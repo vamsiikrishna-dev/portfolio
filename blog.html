@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global Metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <link rel="icon" type="image/svg+xml" href="./src/images/profile.jpg">
+    <meta name="generator" content="Astro v3.4.0">
+
+    <title>Vamsi Krishna | Software Developer</title>
+    <meta name="title" content="Vamsi Krishna | Software Developer">
+    <meta name="description"
+        content="Experienced web developer passionate about crafting efficient, accessible, and fast digital solutions.">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <style>
+        .accent {
+            color: var(--accent);
+            transition: all var(--transitionDuration) ease
+        }
+
+        body {
+            word-wrap: break-word;
+            font-family: Verdana, sans-serif;
+            line-height: 1.5;
+            margin: auto;
+            overflow-wrap: break-word;
+            text-align: left
+        }
+
+        b,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        strong {
+            color: inherit
+        }
+
+        a {
+            color: #3273dc
+        }
+
+        textarea {
+            width: 100%
+        }
+
+        input,
+        textarea {
+            font-size: 16px
+        }
+
+        content {
+            line-height: 1.6
+        }
+
+        table {
+            width: 100%
+        }
+
+        img {
+            height: auto;
+            max-width: 100%
+        }
+
+        code {
+            background-color: #f2f2f2;
+            padding: 2px 5px
+        }
+
+        pre {
+            padding: 1rem
+        }
+
+        pre>code {
+            all: unset
+        }
+
+        code {
+            all: unset
+        }
+
+        blockquote {
+            border: 1px solid #999;
+            color: #222;
+            font-style: italic;
+            margin: 0;
+            padding: 2px 0 2px 20px
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        :root {
+            --animationCurve: cubic-bezier(.22, 1, .36, 1);
+            --transitionDuration: .3s
+        }
+
+        @media (prefers-color-scheme: light) {
+            :root {
+                --darkLighter: #e0e0e0;
+                --lightDarker: #746463;
+                --accentRgb: 0, 50, 170;
+                --accent: rgb(var(--accentRgb));
+                --lightRgb: 24, 26, 27;
+                --light: rgb(var(--lightRgb));
+                --darkRgb: 242, 242, 242;
+                --dark: rgb(var(--darkRgb));
+                --shadowColor: rgba(0, 0, 0, .35);
+                --shadow: 0 0px 5px var(--shadowColor);
+                --shadowLifted: 0 0px 64px -10px var(--shadowColor)
+            }
+        }
+
+        :root[data-theme=light] {
+            --darkLighter: #e0e0e0;
+            --lightDarker: #746463;
+            --accentRgb: 0, 50, 170;
+            --accent: rgb(var(--accentRgb));
+            --lightRgb: 24, 26, 27;
+            --light: rgb(var(--lightRgb));
+            --darkRgb: 242, 242, 242;
+            --dark: rgb(var(--darkRgb));
+            --shadowColor: rgba(0, 0, 0, .35);
+            --shadow: 0 0px 5px var(--shadowColor);
+            --shadowLifted: 0 0px 64px -10px var(--shadowColor)
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --dark: #181a1b;
+                --darkLighter: #242424;
+                --light: #e8e6e3;
+                --lightDarker: #848484;
+                --accent: #67fd67;
+                --lightRgb: 232, 230, 227;
+                --accentRgb: 103, 253, 103;
+                --darkRgb: 24, 26, 27;
+                --shadowColor: rgba(0, 0, 0, .75);
+                --shadow: 0 0px 10px var(--shadowColor);
+                --shadowLifted: 0 0px 64px -10px var(--shadowColor)
+            }
+        }
+
+        :root[data-theme=dark] {
+            --dark: #181a1b;
+            --darkLighter: #242424;
+            --light: #e8e6e3;
+            --lightDarker: #848484;
+            --accent: #67fd67;
+            --lightRgb: 232, 230, 227;
+            --accentRgb: 103, 253, 103;
+            --darkRgb: 24, 26, 27;
+            --shadowColor: rgba(0, 0, 0, .75);
+            --shadow: 0 0px 10px var(--shadowColor);
+            --shadowLifted: 0 0px 64px -10px var(--shadowColor)
+        }
+
+        body {
+            background-color: var(--dark);
+            color: var(--light);
+            transition: all var(--transitionDuration) ease
+        }
+    </style>
+    <link rel="stylesheet" href="/src/index.css" />
+    <style>
+        svg[data-astro-cid-ayjk3irk] {
+            height: 1em;
+            width: 1em
+        }
+
+        svg[data-astro-cid-uyewcmty] {
+            height: 1em;
+            width: 1em
+        }
+
+        .theme-switcher[data-astro-cid-obcerpi7] {
+            background-color: var(--dark);
+            border: 2px solid var(--light);
+            border-radius: 2rem;
+            color: var(--light);
+            cursor: pointer;
+            display: flex;
+            font-size: 1.5rem;
+            gap: 1ch;
+            opacity: .7;
+            padding: .5rem;
+            transition: all var(--transitionDuration) ease;
+            z-index: 1
+        }
+
+        .theme-switcher[data-astro-cid-obcerpi7].fixed {
+            position: fixed;
+            right: 1rem;
+            top: 1rem
+        }
+
+        .theme-switcher[data-astro-cid-obcerpi7]:focus,
+        .theme-switcher[data-astro-cid-obcerpi7]:hover {
+            box-shadow: 0 0 5px 1px var(--accent)
+        }
+
+        .theme-switcher[data-astro-cid-obcerpi7]:focus,
+        .theme-switcher[data-astro-cid-obcerpi7]:hover {
+            border-color: var(--accent);
+            opacity: 1;
+            outline: none
+        }
+
+        .icon-wrapper[data-astro-cid-obcerpi7] {
+            display: flex;
+            transition: color var(--transitionDuration) ease
+        }
+
+        @keyframes shake {
+            0% {
+                transform: rotate(0) scale(1)
+            }
+
+            33% {
+                transform: rotate(-30deg) scale(1.15)
+            }
+
+            66% {
+                transform: rotate(30deg) scale(1.15)
+            }
+
+            to {
+                transform: rotate(0) scale(1)
+            }
+        }
+
+        .icon-wrapper[data-astro-cid-obcerpi7].active {
+            animation: shake .5s ease-out
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root:not([data-theme=light]) .icon-wrapper[data-astro-cid-obcerpi7]#dark-theme-icon {
+                color: var(--accent)
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            :root:not([data-theme=dark]) .icon-wrapper[data-astro-cid-obcerpi7]#light-theme-icon {
+                color: var(--accent)
+            }
+        }
+
+        :root[data-theme=light] .icon-wrapper[data-astro-cid-obcerpi7]#light-theme-icon {
+            color: var(--accent)
+        }
+
+        :root[data-theme=light] .icon-wrapper[data-astro-cid-obcerpi7]#dark-theme-icon {
+            color: var(--light)
+        }
+
+        :root[data-theme=dark] .icon-wrapper[data-astro-cid-obcerpi7]#light-theme-icon {
+            color: var(--light)
+        }
+
+        :root[data-theme=dark] .icon-wrapper[data-astro-cid-obcerpi7]#dark-theme-icon {
+            color: var(--accent)
+        }
+
+        @media screen and (max-width: 767px) {
+            .theme-switcher[data-astro-cid-obcerpi7] {
+                right: .5rem;
+                top: .5rem
+            }
+
+            :root[data-theme=dark] .icon-wrapper[data-astro-cid-obcerpi7]#light-theme-icon {
+                display: none
+            }
+
+            :root[data-theme=light] .icon-wrapper[data-astro-cid-obcerpi7]#dark-theme-icon {
+                display: none
+            }
+
+            @media (prefers-color-scheme: dark) {
+                :root:not([data-theme=light]) .icon-wrapper[data-astro-cid-obcerpi7]#light-theme-icon {
+                    display: none
+                }
+            }
+
+            @media (prefers-color-scheme: light) {
+                :root:not([data-theme=dark]) .icon-wrapper[data-astro-cid-obcerpi7]#dark-theme-icon {
+                    display: none
+                }
+            }
+        }
+
+        svg[data-astro-cid-3kbl2l44] {
+            height: 1em;
+            width: 1em
+        }
+    </style>
+    <!-- <script type="module" src="/src/hoisted.def39db7.js"></script> -->
+</head>
+
+<body>
+    <main>
+        <nav id="nav" style="flex-direction: column;" class="nav" data-astro-cid-ff2ghwth>
+            <div class="nav-content" data-astro-cid-ff2ghwth>
+                <a href="/index.html#hero" class="home-link scrolling-link" data-scroll-to="hero"
+                    data-track-click="navigation:home:link" data-astro-cid-ff2ghwth>
+                    <span class="avatar" data-astro-cid-ff2ghwth>
+                        <img src="/src/images/profile.jpg" style="height:101%;width:100%;border-radius: 25px;" />
+                    </span>
+                    <span class="author" data-astro-cid-ff2ghwth>Vamsi Krishna</span>
+                </a>
+                <ul class="links" data-astro-cid-ff2ghwth>
+                    <li class="link-wrapper" data-astro-cid-ff2ghwth>
+                        <a href="/index.html#about" class="link scrolling-link" data-scroll-to="about"
+                            data-track-click="navigation:link" data-track-click-data="About"
+                            data-astro-cid-ff2ghwth>About</a>
+                    </li>
+                    <li title="Tech Blogs,Low Level Design" class="link-wrapper" data-astro-cid-ff2ghwth>
+                        <a href="/blog.html" class="link scrolling-link" data-scroll-to="about"
+                            data-track-click="navigation:link" data-track-click-data="About"
+                            data-astro-cid-ff2ghwth>Blogs</a>
+                    </li>
+                    <li title="Today I Learned" class="link-wrapper" data-astro-cid-ff2ghwth>
+                        <a href="/tli.html" class="link scrolling-link" data-scroll-to="about"
+                            data-track-click="navigation:link" data-track-click-data="About"
+                            data-astro-cid-ff2ghwth>TIL</a>
+                    </li>
+                    <li class="link-wrapper" data-astro-cid-ff2ghwth>
+                        <a href="/index.html#projects" class="link scrolling-link" data-scroll-to="projects"
+                            data-track-click="navigation:link" data-track-click-data="Projects"
+                            data-astro-cid-ff2ghwth>Projects</a>
+                    </li>
+                    <li class="link-wrapper" data-astro-cid-ff2ghwth>
+                        <a href="/#contact" class="link scrolling-link" data-scroll-to="contact"
+                            data-track-click="navigation:link" data-track-click-data="Contact"
+                            data-astro-cid-ff2ghwth>Contact</a>
+                    </li>
+                </ul>
+                <div data-track-click="navigation:theme-switcher" data-astro-cid-ff2ghwth>
+                    <button theme-vamsi="theme" type="button" id="theme-switcher" aria-label="theme-switcher"
+                        class="theme-switcher print-hidden " data-astro-cid-obcerpi7>
+                        <div id="dark-theme-icon" class="icon-wrapper" data-astro-cid-obcerpi7>
+                            <!--?xml version="1.0" encoding="utf-8"?-->
+                            <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                            <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" data-astro-cid-ayjk3irk>
+                                <path
+                                    d="M12 22C17.5228 22 22 17.5228 22 12C22 11.5373 21.3065 11.4608 21.0672 11.8568C19.9289 13.7406 17.8615 15 15.5 15C11.9101 15 9 12.0899 9 8.5C9 6.13845 10.2594 4.07105 12.1432 2.93276C12.5392 2.69347 12.4627 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                    fill="currentColor" data-astro-cid-ayjk3irk></path>
+                            </svg>
+                        </div>
+                        <div id="light-theme-icon" class="icon-wrapper" data-astro-cid-obcerpi7>
+                            <!--?xml version="1.0" encoding="utf-8"?-->
+                            <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                            <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" data-astro-cid-uyewcmty>
+                                <path
+                                    d="M17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12Z"
+                                    fill="currentColor" data-astro-cid-uyewcmty></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12 1.25C12.4142 1.25 12.75 1.58579 12.75 2V4C12.75 4.41421 12.4142 4.75 12 4.75C11.5858 4.75 11.25 4.41421 11.25 4V2C11.25 1.58579 11.5858 1.25 12 1.25ZM3.66865 3.71609C3.94815 3.41039 4.42255 3.38915 4.72825 3.66865L6.95026 5.70024C7.25596 5.97974 7.2772 6.45413 6.9977 6.75983C6.7182 7.06553 6.2438 7.08677 5.9381 6.80727L3.71609 4.77569C3.41039 4.49619 3.38915 4.02179 3.66865 3.71609ZM20.3314 3.71609C20.6109 4.02179 20.5896 4.49619 20.2839 4.77569L18.0619 6.80727C17.7562 7.08677 17.2818 7.06553 17.0023 6.75983C16.7228 6.45413 16.744 5.97974 17.0497 5.70024L19.2718 3.66865C19.5775 3.38915 20.0518 3.41039 20.3314 3.71609ZM1.25 12C1.25 11.5858 1.58579 11.25 2 11.25H4C4.41421 11.25 4.75 11.5858 4.75 12C4.75 12.4142 4.41421 12.75 4 12.75H2C1.58579 12.75 1.25 12.4142 1.25 12ZM19.25 12C19.25 11.5858 19.5858 11.25 20 11.25H22C22.4142 11.25 22.75 11.5858 22.75 12C22.75 12.4142 22.4142 12.75 22 12.75H20C19.5858 12.75 19.25 12.4142 19.25 12ZM17.0255 17.0252C17.3184 16.7323 17.7933 16.7323 18.0862 17.0252L20.3082 19.2475C20.6011 19.5404 20.601 20.0153 20.3081 20.3082C20.0152 20.6011 19.5403 20.601 19.2475 20.3081L17.0255 18.0858C16.7326 17.7929 16.7326 17.3181 17.0255 17.0252ZM6.97467 17.0253C7.26756 17.3182 7.26756 17.7931 6.97467 18.086L4.75244 20.3082C4.45955 20.6011 3.98468 20.6011 3.69178 20.3082C3.39889 20.0153 3.39889 19.5404 3.69178 19.2476L5.91401 17.0253C6.2069 16.7324 6.68177 16.7324 6.97467 17.0253ZM12 19.25C12.4142 19.25 12.75 19.5858 12.75 20V22C12.75 22.4142 12.4142 22.75 12 22.75C11.5858 22.75 11.25 22.4142 11.25 22V20C11.25 19.5858 11.5858 19.25 12 19.25Z"
+                                    fill="currentColor" data-astro-cid-uyewcmty></path>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+
+                <!-- <ThemeCustomization /> -->
+            </div>
+
+        </nav>
+    </main>
+
+    <script defer src="https://www.googletagmanager.com/gtag/js?id=G-69R5YGS2NS"></script>
+    <script>
+        (function ()
+        {
+            const id = "G-69R5YGS2NS";
+
+            window.dataLayer = window.dataLayer || [];
+            window.gtag = function ()
+            {
+                window.dataLayer.push(arguments);
+            }
+                ;
+
+            window.initGaTracking = () =>
+            {
+                let userId = localStorage.getItem("user-id");
+                if (!userId)
+                {
+                    userId = crypto.randomUUID();
+                    localStorage.setItem("user-id", userId);
+                }
+                gtag("js", new Date());
+                gtag("config", id, {
+                    user_id: userId
+                });
+            }
+                ;
+
+            window.initGaTracking();
+        }
+        )();
+    </script>
+    <script src="/src/urls.js"></script>
+    <script src="/src/script.js"></script>
+
+</body>
+
+</html>
